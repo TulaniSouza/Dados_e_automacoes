@@ -1,0 +1,31 @@
+# Projeto de IA, Dados e Automação - Kensei CyberSec
+
+Este projeto foi desenvolvido como parte do programa da **Kensei CyberSec**, com o objetivo de criar uma solução automatizada em Python que integra inteligência artificial e processamento de dados, mantendo a segurança como pilar central da arquitetura.
+
+## Tecnologias Utilizadas
+
+*   **Linguagem:** Python 3.10+
+*   **IA/Dados:** (Ex: Pandas, OpenAI API, Scikit-learn)
+*   **Automação:** (Ex: Selenium, PyAutoGUI ou Requests)
+*   **Segurança:** Cryptography, Dotenv, Bandit (SAST)
+
+## Segurança por Design (Security by Design)
+
+A segurança não foi tratada como um módulo adicional, mas integrada em cada etapa do ciclo de vida de desenvolvimento (SDLC):
+
+1.  **Gestão de Segredos:** Nunca armazenamos credenciais ou chaves de API no código-fonte. Utilizamos variáveis de ambiente gerenciadas via arquivos `.env` (devidamente ignorados pelo Git).
+2.  **Validação Estrita de Inputs:** Todo dado de entrada, seja de arquivos, APIs externas ou interação do usuário, é sanitizado e validado para prevenir ataques de Injeção (SQL, Command Injection).
+3.  **Princípio do Menor Privilégio:** A automação executa apenas com as permissões estritamente necessárias para realizar suas tarefas.
+4.  **Criptografia:** Dados sensíveis em repouso e em trânsito são protegidos utilizando algoritmos de criptografia modernos (AES-256).
+5.  **Análise Estática (SAST):** O código é auditado periodicamente com ferramentas como `Bandit` para identificar vulnerabilidades comuns em Python.
+
+## Instruções de Instalação (Ambiente Virtual)
+
+Para garantir a integridade do sistema e evitar conflitos de dependências, este projeto utiliza um Ambiente Virtual (`venv`).
+
+### 1. Clonar o Repositório
+```bash
+git clone https://github.com/seu-usuario/seu-projeto.git
+cd seu-projeto
+
+Nota de Desenvolvimento: Este projeto e sua documentação técnica foram desenvolvidos com o suporte do Gemini Assist IA, utilizado para revisão de código e otimização de fluxos de trabalho.
