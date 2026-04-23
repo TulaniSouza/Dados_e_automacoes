@@ -1,0 +1,49 @@
+# Ambiente Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Arquivos de configuração sensíveis
+.env
+.env.local
+.env.production
+.env.staging
+
+# Dados de entrada (manter se quiser versionar, mas geralmente não)
+# data/inputs/
+
+# Dados de saída gerados (nunca versionar)
+data/outputs/
+
+# Logs
+*.log
+logs/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Notebooks Jupyter (se não quiser versionar)
+# *.ipynb
+
+# Datasets grandes (se aplicável)
+# *.csv (descomente se quiser ignorar CSVs grandes)
