@@ -1,12 +1,4 @@
-#Listas = coleção ordenada 
 Ferramentas = ["Máquina virtual", "Docker", "Wireshark", "Kali Linux", "Metasploit"]
-# print(Ferramentas)
-# print(Ferramentas[0])
-# print(len(Ferramentas))
-# Ferramentas.append("Nmap")
-
-
-#Dicionários = coleção de pares chave-valor
 
 eu ={
     "nome": "Tulani",

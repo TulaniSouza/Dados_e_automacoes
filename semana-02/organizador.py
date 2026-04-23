@@ -1,4 +1,3 @@
-# organizador.py
 
 print("--- Organizador de Nomes (Ordem Alfabética) ---")
 print("Digite os nomes um por um. Quando terminar, digite 'fim'.\n")

@@ -25,7 +25,7 @@ Para garantir a integridade do sistema e evitar conflitos de dependências, este
 
 ### 1. Clonar o Repositório
 ```bash
-git clone https://github.com/seu-usuario/seu-projeto.git
-cd seu-projeto
+git clone https://github.com/TulaniSouza/Dados_e_automacoes.git
+
 
 Nota de Desenvolvimento: Este projeto e sua documentação técnica foram desenvolvidos com o suporte do Gemini Assist IA, utilizado para revisão de código e otimização de fluxos de trabalho.
