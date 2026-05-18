@@ -1,0 +1,142 @@
+{
+  "name": "Mensagem Motivacional Diária no Telegram",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "7f6e4a2b-1234-4abc-8def-1234567890ab",
+      "name": "Agendamento Diário (08:00)"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "chat_id_assign",
+              "name": "chatId",
+              "value": "SEU_CHAT_ID_AQUI",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        220,
+        0
+      ],
+      "id": "8f7e5b3c-2345-5bcd-9efg-2345678901bc",
+      "name": "Configurações"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent",
+        "sendQueryParameters": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "key",
+              "value": "SUA_API_KEY_DO_GEMINI_AQUI"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Gere uma mensagem motivacional curta em português do Brasil, com 2 a 4 frases. Use um tom positivo, inspirador e energético. A mensagem deve ser original e terminar com dois emojis motivacionais.\"\n        }\n      ]\n    }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        0
+      ],
+      "id": "9a0b1c2d-3456-6cde-0fgh-3456789012cd",
+      "name": "Gerar Mensagem (Gemini)"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $node[\"Configurações\"].json.chatId }}",
+        "text": "={{ $json.candidates[0].content.parts[0].text }}",
+        "additionalFields": {
+          "appendAttribution": false,
+          "parse_mode": "Markdown"
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.1,
+      "position": [
+        660,
+        0
+      ],
+      "id": "0b1c2d3e-4567-7def-1ghi-4567890123de",
+      "name": "Enviar para Telegram",
+      "credentials": {
+        "telegramApi": {
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Agendamento Diário (08:00)": {
+      "main": [
+        [
+          {
+            "node": "Configurações",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Configurações": {
+      "main": [
+        [
+          {
+            "node": "Gerar Mensagem (Gemini)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gerar Mensagem (Gemini)": {
+      "main": [
+        [
+          {
+            "node": "Enviar para Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Sao_Paulo",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true
+  }
+}
