@@ -1,0 +1,16 @@
+{
+  "name": "Agent 1 - Calc/Wiki",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "functionCode": "// TODO: implementar agente de cálculo/wiki usando LLM e logs de auditoria"
+      },
+      "name": "CalculateAndWiki",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [250, 300]
+    }
+  ],
+  "connections": {}
+}

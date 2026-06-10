@@ -1,0 +1,9 @@
+[
+  {
+    "interaction_id": "00000000-0000-0000-0000-000000000000",
+    "input": "Exemplo de input de triagem SOC",
+    "expected_decision": "investigate",
+    "expected_justification": "Indicação de IOC relevante com severidade alta.",
+    "tags": ["soc", "triage", "investigation"]
+  }
+]

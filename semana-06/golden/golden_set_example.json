@@ -1,0 +1,9 @@
+[
+  {
+    "interaction_id": "00000000-0000-0000-0000-000000000001",
+    "input": "Analise IOC e risco",
+    "expected_decision": "investigate",
+    "expected_justification": "Indicação de IOC relevante com severidade alta.",
+    "tags": ["soc", "triage", "investigation"]
+  }
+]

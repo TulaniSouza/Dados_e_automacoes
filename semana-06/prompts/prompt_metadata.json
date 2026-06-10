@@ -1,0 +1,14 @@
+{
+  "prompt_registry": [
+    {
+      "id": "agent1-calc-wiki-v1",
+      "name": "Agente 1 - Cálculo e Wiki",
+      "version": "1.0",
+      "created_at": "2026-05-21",
+      "author": "time de dados",
+      "description": "Prompt base para entranhas de cálculo e consulta enciclopédica com logs completos.",
+      "changes": "Versão inicial do prompt.",
+      "status": "draft"
+    }
+  ]
+}

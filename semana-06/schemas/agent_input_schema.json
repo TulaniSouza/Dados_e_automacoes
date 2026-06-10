@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentInput",
+  "description": "Contrato de entrada comum para agentes de dados.",
+  "type": "object",
+  "properties": {
+    "interaction_id": {"type": "string", "format": "uuid"},
+    "user_input": {"type": "string"},
+    "agent_id": {"type": "string"},
+    "prompt_version": {"type": "string"},
+    "context": {"type": ["object", "null"]},
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "source": {"type": "string"},
+        "requested_at": {"type": "string", "format": "date-time"},
+        "user_id": {"type": "string"}
+      },
+      "required": ["source", "requested_at"]
+    }
+  },
+  "required": ["interaction_id", "user_input", "agent_id", "prompt_version"]
+}

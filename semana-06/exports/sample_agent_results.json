@@ -1,0 +1,14 @@
+[
+  {
+    "interaction_id": "00000000-0000-0000-0000-000000000001",
+    "agent_id": "agent4-soc-triagem",
+    "decision": "investigate",
+    "justification": "IOC com evidência de atividade maliciosa e contexto de alta confiança.",
+    "evidence": ["IP malicioso listado em feed de threat intel"],
+    "confidence": 0.95,
+    "model_version": "gpt-4.1",
+    "prompt_version": "agent4-soc-triagem-v1",
+    "latency_ms": 2400,
+    "cost_usd": 0.005
+  }
+]
