@@ -6,15 +6,24 @@ __pycache__/
 .venv/
 venv/
 ENV/
+env/
 
 # Environment
 .env
 .env.*
+semana-07/.env
 
 # Streamlit
 .streamlit/secrets.toml
 
 # Logs
+*.log
+
+# OS e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
 *.log
 
 # OS files

@@ -9,12 +9,12 @@
 
 # Kensei AI Foundations: Engenharia de Dados & Automação Inteligente
 
-## 🏢 Sobre o Programa & Ecossistema
+##  Sobre o Programa & Ecossistema
 Este repositório consolida o desenvolvimento técnico e a arquitetura de soluções criadas durante o programa **Kensei AI Foundations**. Sob a égide do **Kensei CyberSec Lab** — uma instituição com mais de 20 anos de expertise em tecnologia e segurança — este projeto foi estruturado sob a mentalidade "Precisão de Samurai": a busca por pipelines impecáveis, pipelines estáveis e arquiteturas "AI-First".
 
 O foco central não é apenas a codificação passiva, mas a aplicação de engenharia de valor para resolver problemas reais de negócios, transformando dados brutos em ativos estratégicos e tarefas manuais em fluxos autônomos de alta disponibilidade.
 
-## 🎯 O Que Vou Aprender?
+##  O Que Vou Aprender?
 
 A trilha técnica é dividida em blocos lógicos de competências, garantindo uma progressão que vai do código assistido à orquestração de sistemas complexos:
 
@@ -27,7 +27,7 @@ A trilha técnica é dividida em blocos lógicos de competências, garantindo um
 | ⚙️ **Automação n8n** | Construção de workflows inteligentes combinando no-code com IA em ambiente self-hosted. |
 | 🌐 **Apps com Streamlit** | Desenvolvimento de aplicações web rápidas e funcionais para entrega de valor ao usuário. |
 
-## 📊 Arquitetura de Soluções (Data & Automation Pipelines)
+##  Arquitetura de Soluções (Data & Automation Pipelines)
 
 O projeto é dividido em duas esteiras principais que demonstram maturidade técnica em diferentes camadas da pilha tecnológica:
 
@@ -43,7 +43,7 @@ Demonstra a capacidade de orquestrar ferramentas e APIs em um ecossistema integr
 *   **Integrações**: Consumo de APIs REST, configuração de Webhooks e tratamento de fluxos de decisão complexos (nós condicionais e loops).
 *   **Persistência e Notificação**: Centralização de dados estruturados em bases relacionais (ou ferramentas como Baserow) com camadas de notificação automatizada para monitoramento em tempo real.
 
-## 🛠️ Infraestrutura e Stack Tecnológica
+##  Infraestrutura e Stack Tecnológica
 
 A escolha das ferramentas reflete uma preocupação com o isolamento de ambientes e a reprodutibilidade em cenários de produção.
 
@@ -55,7 +55,7 @@ A escolha das ferramentas reflete uma preocupação com o isolamento de ambiente
 | **n8n** | Orquestração | Workflow engine para automação de processos críticos sem lock-in de fornecedor. |
 | **Git/GitHub** | Versionamento | Histórico de desenvolvimento utilizando padrões de Conventional Commits. |
 
-## 🛡️ Diferenciais Técnicos e Mentalidade de Produção
+##  Diferenciais Técnicos e Mentalidade de Produção
 
 Como engenheiro focado em resultados, este repositório adota três pilares indispensáveis para qualquer ambiente corporativo moderno:
 
@@ -72,7 +72,12 @@ Como engenheiro focado em resultados, este repositório adota três pilares indi
     *   Substituição de processos manuais repetitivos por agentes autônomos que operam em regime 24/7 com supervisão mínima.
     *   Arquitetura escalável que permite a adição de novos módulos sem degradar a performance do sistema existente.
 
-## 🚀 Instalação e Execução
+##  DESTAQUE PRINCIPAL: RELATÓRIO FINAL
+Para uma visão detalhada da minha evolução, arquitetura de soluções e análise técnica de cada semana, acesse:
+👉 [CLIQUE AQUI PARA VER O RELATÓRIO COMPLETO (PDF)](./docs/relatorio_final_tulani.pdf)
+
+---
+##  Instalação e Execução
 
 Para validar os pipelines e o ambiente de desenvolvimento, siga as instruções abaixo:
 
